@@ -1,0 +1,335 @@
+﻿<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!DOCTYPE html>
+<html lang="en-US">
+    <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Nisa- The most Awaited Birthday
+        </title><!-- Behavioral Meta Data -->
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"><!-- Core Meta Data -->
+        <meta content="Nisa Birthday" name="author">
+        <meta content="The most Awaited Birthday coming soon!" name="Nisa, Happy Birthday">
+        <meta content="The most Awaited Birthday coming soon!" name="Nisa, Happy Birthday, Virgo"><!-- Open Graph Meta Data -->
+        <meta content="The most Awaited Birthday coming soon!">
+        <meta content="Nisa">
+        <meta content="Nisa">
+        <meta content="website">
+        <meta content="index.html"><!-- Twitter Card Meta Data -->
+        <meta content="summary" name="twitter:card">
+        <meta content="Nisa" name="twitter:site">
+        <meta content="Nisa name="twitter:creator">
+        <meta content="Nisa" name="twitter:title">
+        <meta content="Nisa- The most Awaited Birthday" name="twitter:description">
+
+        <link href="favicon.png" rel="shortcut icon" type="image/png">
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <!-- CSS -->
+        <link href='../css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'><!-- Styles -->
+        <link href="css/loader.css" rel="stylesheet" type="text/css">
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" type="text/css" href="css/ie.css" />
+        <![endif]-->
+        <!-- Javascript -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery-countdown@2.2.0/dist/jquery.countdown.min.js"></script>
+        <script src="js/jquery.js"></script>
+        
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                background: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                overflow: hidden;
+            }
+
+            .center-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                text-align: center;
+                padding: 0 20px;
+            }
+
+            #countdown {
+                font-size: 36px;
+                font-weight: bold;
+                background: linear-gradient(270deg, #ff4d4d, #ff9900, #ffff33, #33cc33, #3399ff, #cc33ff);
+                background-size: 1200% 1200%;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: rainbowText 10s ease infinite;
+                z-index: 10;
+                position: relative;
+                transition: all 0.5s ease;
+            }
+            
+            #countdown.birthday-message {
+                font-size: 60px;
+                animation: none;
+                background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+                background-size: 400% 400%;
+                animation: gradient 8s linear infinite;
+            }
+
+            @keyframes rainbowText {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+            }
+            
+            @keyframes gradient {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+            }
+
+            @media (max-width: 600px) {
+                #countdown {
+                    font-size: 20px;
+                }
+                #countdown.birthday-message {
+                    font-size: 30px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="preloader">
+            <div class="loading">
+                <h2>
+                    Loading...
+                </h2>
+                <span class="progress"></span>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <ul class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" id="scene">
+                <li class="layer" data-depth="0.00">
+                </li>
+                <!-- BG -->
+
+                <li class="layer" data-depth="0.10">
+                    <div class="background">
+                    </div>
+                </li>
+
+                <!-- Hero -->
+
+                <li class="layer" data-depth="0.20">
+                    <div class="title">
+                        <h2>
+                            NIsa Asghar
+                        </h2>
+                        <span class="line"></span>
+                    </div>
+                </li>
+
+                <li class="layer" data-depth="0.25">
+                    <div class="sphere">
+                        <img alt="sphere" src="images/sphere.png">
+                    </div>
+                </li>
+
+                <li class="layer" data-depth="0.30">
+                    <div class="hero">
+                       <h1 id="countdown">Countdown loading...</h1>
+                        <p class="sub-title">
+                            The most Awaited Birthday coming soon!
+                        </p>
+                    </div>
+                </li>
+                <!-- Flakes -->
+
+                <li class="layer" data-depth="0.40">
+                    <div class="depth-1 flake1">
+                        <img alt="flake" src="images/flakes/depth1/flakes1.png">
+                    </div>
+
+                    <div class="depth-1 flake2">
+                        <img alt="flake" src="images/flakes/depth1/flakes2.png">
+                    </div>
+
+                    <div class="depth-1 flake3">
+                        <img alt="flake" src="images/flakes/depth1/flakes3.png">
+                    </div>
+
+                    <div class="depth-1 flake4">
+                        <img alt="flake" src="images/flakes/depth1/flakes4.png">
+                    </div>
+                </li>
+
+                <li class="layer" data-depth="0.50">
+                    <div class="depth-2 flake1">
+                        <img alt="flake" src="images/flakes/depth2/flakes1.png">
+                    </div>
+
+                    <div class="depth-2 flake2">
+                        <img alt="flake" src="images/flakes/depth2/flakes2.png">
+                    </div>
+                </li>
+
+                <li class="layer" data-depth="0.60">
+                    <div class="depth-3 flake1">
+                        <img alt="flake" src="images/flakes/depth3/flakes1.png">
+                    </div>
+
+                    <div class="depth-3 flake2">
+                        <img alt="flake" src="images/flakes/depth3/flakes2.png">
+                    </div>
+
+                    <div class="depth-3 flake3">
+                        <img alt="flake" src="images/flakes/depth3/flakes3.png">
+                    </div>
+
+                    <div class="depth-3 flake4">
+                        <img alt="flake" src="images/flakes/depth3/flakes4.png">
+                    </div>
+                </li>
+
+                <li class="layer" data-depth="0.80">
+                    <div class="depth-4">
+                        <img alt="flake" src="images/flakes/depth4/flakes.png">
+                    </div>
+                </li>
+
+                <li class="layer" data-depth="1.00">
+                    <div class="depth-5">
+                        <img alt="flake" src="images/flakes/depth5/flakes.png">
+                    </div>
+                </li>
+                <!-- Contact -->
+
+                <li class="layer" data-depth="0.20">
+                    <div class="contact">
+                        <ul class="icons">
+                            <!-- <li>
+                                <a class="behance" href="#"><i class="fa fa-behance"></i></a>
+                            </li> -->
+
+                            <li>
+                                <a class="github" href="https://github.com/yusufsyed24/"><i class="fa fa-github"></i></a>
+                            </li>
+
+                            <!-- <li>
+                                <a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+                            </li> -->
+                        </ul>
+                        <a href="https://yusufsyed24.github.io/syedyusufhussaini/" target="_blank">Syed Yusuf Hussaini</a>
+                        <a class="mail" href="mailto:yousufsyed24@gmail.com!">yousufsyed24@gmail.com</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+  <!-- Replace your entire script section with this: -->
+<script src="js/plugins.js"></script> 
+<script src="js/jquery.countdown.min.js"></script> 
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<style>
+    /* Guaranteed visible birthday message */
+    #countdown.birthday-message {
+        font-size: 60px;
+        color: #ff0066 !important;
+        -webkit-text-fill-color: #ff0066 !important;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+        background: none !important;
+        background-image: none !important;
+        animation: none;
+        display: block !important;
+        position: relative !important;
+        z-index: 9999 !important;
+    }
+</style>
+
+<script>
+    // Bulletproof countdown implementation
+    let countdownActive = true;
+    const endDate = new Date("September 1, 2025 00:00:00").getTime();
+    const countdownEl = document.getElementById('countdown');
+    const subTitleEl = document.querySelector('.sub-title');
+
+    function celebrateBirthday() {
+        // Set permanent birthday message
+        countdownEl.innerHTML = "🎉 Happy Birthday Nisa! 🎉";
+        countdownEl.classList.add('birthday-message');
+        
+        // Hide subtitle
+        if (subTitleEl) subTitleEl.style.display = 'none';
+        
+        // Continuous celebration
+        const confettiInterval = setInterval(() => {
+            confetti({
+                particleCount: 150,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+        }, 3000);
+        
+        // Initial burst
+        confetti({
+            particleCount: 500,
+            spread: 100
+        });
+    }
+
+    function updateCountdown() {
+        if (!countdownActive) return;
+        
+        const now = new Date().getTime();
+        const distance = endDate - now;
+
+        if (distance <= 0) {
+            countdownActive = false;
+            celebrateBirthday();
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownEl.innerHTML = `Nisa's Birthday in: ${days} days, ${String(hours).padStart(2, '0')} hours, ${String(minutes).padStart(2, '0')} minutes, ${String(seconds).padStart(2, '0')} seconds`;
+    }
+
+    // Start everything after page loads
+    window.addEventListener('load', function() {
+        // Hide preloader
+        const preloader = document.querySelector(".preloader");
+        if (preloader) {
+            preloader.classList.add("fade-out");
+            setTimeout(() => preloader.style.display = "none", 1000);
+        }
+        
+        // Start countdown
+        const countdownInterval = setInterval(function() {
+            updateCountdown();
+            if (!countdownActive) {
+                clearInterval(countdownInterval);
+            }
+        }, 1000);
+        
+        // Initial update
+        // updateCountdown();
+    });
+</script>
+    </body>
+</html>
