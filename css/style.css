@@ -58,7 +58,7 @@ a {
 h1, h2 { margin: 0; }
 
 h1 {
-	font-size: 24px;
+	font-size: 60px;
 	font-weight: 800;
 	line-height: 80px;
 	letter-spacing: -0.08em;
@@ -90,10 +90,41 @@ h2 {
 }
 
 .sub-title {
-	font-size: 18px;
-	margin-top: 5px;
-	margin-bottom: 0px;
+  font-size: 72px; /* Increased from 60px */
+  font-weight: 700; /* Increased from 500 (bolder) */
+  background: linear-gradient(to right, #ff69b4, #ffb347, #8a2be2, #00c3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 300%; /* Added for smoother gradient animation */
+  animation: gradientMove 5s infinite linear;
+  margin-top: 20px; /* Increased from 10px */
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Added subtle shadow for better readability */
+  letter-spacing: 1px; /* Slightly increased letter spacing */
+  line-height: 1.2; /* Better line spacing */
+  padding: 0 20px; /* Added padding to prevent edge clipping */
 }
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Optional: Add responsive scaling */
+@media (max-width: 768px) {
+  .sub-title {
+    font-size: 48px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sub-title {
+    font-size: 36px;
+    margin-top: 10px;
+  }
+}
+
 
 
 /* =Content Styles
