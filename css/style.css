@@ -58,7 +58,7 @@ a {
 h1, h2 { margin: 0; }
 
 h1 {
-	font-size: 60px;
+	font-size: 14px;
 	font-weight: 800;
 	line-height: 80px;
 	letter-spacing: -0.08em;
@@ -66,9 +66,10 @@ h1 {
 }
 
 h2 {
-	font-size: 18px;
+	font-size: 150%;
 	font-weight: 800;
 	line-height: 1em;
+	width: auto;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	color: #fe0087;
